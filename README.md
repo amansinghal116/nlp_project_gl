@@ -1,26 +1,68 @@
-# nlp_project_gl
-Stock Market News Sentiment Analysis and Summarization
+# 📈 MarketPulse: Stock News Sentiment Analysis & Summarization for Smarter Investments
 
-## Business Context
+## 🌍 Business Context
 
-The prices of the stocks of companies listed under a global exchange are influenced by a variety of factors, with the company's financial performance, innovations and collaborations, and market sentiment being factors that play a significant role. News and media reports can rapidly affect investor perceptions and, consequently, stock prices in the highly competitive financial industry. With the sheer volume of news and opinions from a wide variety of sources, investors and financial analysts often struggle to stay updated and accurately interpret its impact on the market. As a result, investment firms need sophisticated tools to analyze market sentiment and integrate this information into their investment strategies.
+In the fast-paced financial world, **news can move markets within minutes**. Company performance, strategic decisions, and even rumors shape investor perception and drive stock prices. For investment firms, staying ahead means understanding not just the **numbers**, but also the **narratives** shaping the market.  
 
-## Problem Definition
+However, with **massive volumes of daily financial news**, analysts face the challenge of keeping up and interpreting the real impact of sentiment on market movements.  
 
-With an ever-rising number of news articles and opinions, an investment startup aims to leverage artificial intelligence to address the challenge of interpreting stock-related news and its impact on stock prices. They have collected historical daily news for a specific company listed under NASDAQ, along with data on its daily stock price and trade volumes.
+**MarketPulse** aims to bridge this gap by using **Natural Language Processing (NLP)** to automatically analyze, classify, and summarize stock-related news, empowering financial analysts to make data-driven investment decisions with speed and confidence.
 
-As a member of the Data Science and AI team in the startup, you have been tasked with analyzing the data, developing an AI-driven sentiment analysis system that will automatically process and analyze news articles to gauge market sentiment, and summarizing the news at a weekly level to enhance the accuracy of their stock price predictions and optimize investment strategies. This will empower their financial analysts with actionable insights, leading to more informed investment decisions and improved client outcomes.
+---
 
-## Data Dictionary
+## 🧠 Problem Definition
 
-* `Date` : The date the news was released
-* `News` : The content of news articles that could potentially affect the company's stock price
-* `Open` : The stock price (in \$) at the beginning of the day
-* `High` : The highest stock price (in \$) reached during the day
-* `Low` :  The lowest stock price (in \$) reached during the day
-* `Close` : The adjusted stock price (in \$) at the end of the day
-* `Volume` : The number of shares traded during the day
-* `Label` : The sentiment polarity of the news content
-    * 1: positive
-    * 0: neutral
-    * -1: negative
+An investment startup has collected **historical daily news articles** for a NASDAQ-listed company, alongside daily stock price and trading volume data.  
+
+Your task as part of the Data Science & AI team is to develop an **AI-powered sentiment analysis and summarization system** that can:
+
+- Automatically process and **classify the sentiment** (positive, neutral, negative) of financial news.
+- Generate **weekly summaries** of news content to highlight key trends.
+- Integrate **sentiment insights with stock data** to support better prediction models and investment strategies.
+
+This project will enable analysts to quickly grasp **market mood**, detect emerging trends, and react proactively to market shifts.
+
+---
+
+## 🧾 Data Dictionary
+
+| Column  | Description |
+|---------|-------------|
+| `Date` | Date the news was released |
+| `News` | Content of the news article |
+| `Open` | Stock price (USD) at market open |
+| `High` | Highest stock price (USD) during the day |
+| `Low` | Lowest stock price (USD) during the day |
+| `Close` | Adjusted closing stock price (USD) |
+| `Volume` | Number of shares traded during the day |
+| `Label` | Sentiment polarity of the news content: <br>• 1 = Positive <br>• 0 = Neutral <br>• -1 = Negative |
+
+---
+
+## 🚀 Key Objectives
+
+- ✅ Preprocess and clean financial news text  
+- ✅ Build and evaluate **sentiment classification models** using NLP techniques  
+- ✅ Perform **weekly summarization** of news to identify major trends  
+- ✅ Explore the relationship between **sentiment and stock price movements**  
+- ✅ Visualize market sentiment trends for actionable insights  
+
+---
+
+## 🛠 Technologies & Tools
+
+- **Languages**: Python  
+- **Libraries**: NLTK, SpaCy, Transformers (BERT), Scikit-learn, Pandas, Matplotlib, Seaborn  
+- **Techniques**: Text preprocessing, Sentiment classification, Extractive/Abstractive Summarization, Time series aggregation  
+- **Visualization**: Interactive sentiment and price dashboards
+
+---
+
+## 📊 Potential Impact
+
+By integrating **news sentiment signals** with market data, the startup can:  
+- Improve the **accuracy of stock price prediction models**  
+- Enhance **investment decision-making** with timely sentiment insights  
+- Save analysts hours of manual reading and interpretation every week  
+
+---
